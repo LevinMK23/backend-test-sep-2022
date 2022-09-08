@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import retrofit2.http.Body;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ApiUserConnectRequest {
-    private String username;
-    private String firstName;
-    private String lastName;
-    private String email;
+public class ApiAddToShoppingListRequest {
+    private String item;
+    private String aisle;
+    private Boolean parse;
 }
