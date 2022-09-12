@@ -50,9 +50,9 @@ public class ResolverTest {
     }
 
     @Timeout(value = 1)
-    @RepeatedTest(value = 30)
+    @RepeatedTest(value = 3)
     void performanceTest() {
-        int[] array = new int[4000000];
+        int[] array = new int[2000000];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 1000000);
         }

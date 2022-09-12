@@ -3,6 +3,7 @@ package com.geekbrains.spoonacullar;
 import com.geekbrains.api.ApiSearchResult;
 import io.restassured.RestAssured;
 import net.javacrumbs.jsonunit.JsonAssert;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -48,6 +49,7 @@ public class ComplexSearchApiTest extends BaseApiTest {
 
     @ParameterizedTest
     @MethodSource("resources")
+    @Disabled
     void testImageRecognize(String image) {
         RestAssured.given()
                 .log()
